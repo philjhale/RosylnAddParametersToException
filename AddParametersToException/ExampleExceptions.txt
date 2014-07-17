@@ -1,0 +1,47 @@
+﻿try {}
+catch (TombolaPaymentPaymentProviderNoActiveProvidersException ex)
+{
+	logger.LogException("GetPaymentProviders: No Active Payment Providers", exception: ex);
+	throw;
+}
+catch (TombolaSystemSqlException ex)
+{
+	var sex = new TombolaPaymentPaymentProviderNoActiveProvidersException(ex);
+	logger.LogException("GetPaymentProviders", exception: sex);
+	throw sex;
+}
+catch (Exception ex)
+{
+	var sex = new TombolaPaymentPaymentProviderNoActiveProvidersException(ex);
+	logger.LogUnhandledException("GetPaymentProviders: Unhandled Exception", exception: sex);
+	throw sex;
+}
+
+try{}
+catch (TombolaSystemSqlException ex)
+{
+	var sex = new TombolaPaymentUnableToRetrieveDataException(ex);
+	sex.Data.Add("UserId", userId);
+	logger.LogException("GetActivePaymentMethods: Card", exception: sex);
+	throw sex;
+}
+catch (Exception ex)
+{
+	var sex = new TombolaPaymentUnableToRetrieveDataException(ex);
+	sex.Data.Add("UserId", userId);
+	logger.LogUnhandledException("GetActivePaymentMethods: Card - Unhandled Exception", exception: sex);
+	throw sex;
+}
+
+try{}
+catch (DbException ex)
+{
+	var tex = new TombolaSystemSqlException(ex);
+	ex.Data.Add("DAL_userId", userId);
+	throw tex;
+}
+catch (Exception ex)
+{
+	ex.Data.Add("DAL_userId", userId);
+	throw;
+}

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddParametersToException", "AddParametersToException\AddParametersToException.csproj", "{F450C1E9-E8BE-4ACA-B7E0-AAEAF0B65FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{819B7D10-0F2B-4CD0-8E0E-8D9535271A69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F450C1E9-E8BE-4ACA-B7E0-AAEAF0B65FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F450C1E9-E8BE-4ACA-B7E0-AAEAF0B65FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F450C1E9-E8BE-4ACA-B7E0-AAEAF0B65FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F450C1E9-E8BE-4ACA-B7E0-AAEAF0B65FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{819B7D10-0F2B-4CD0-8E0E-8D9535271A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819B7D10-0F2B-4CD0-8E0E-8D9535271A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819B7D10-0F2B-4CD0-8E0E-8D9535271A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819B7D10-0F2B-4CD0-8E0E-8D9535271A69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

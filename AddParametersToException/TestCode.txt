@@ -1,0 +1,39 @@
+﻿try
+{
+	Console.WriteLine("stuff");
+}
+catch(Exception ex)
+{
+	Console.WriteLine("Things");
+}
+
+
+
+public static void MyNewMethod(string arg1, string arg2)
+{
+	try
+	{
+		Console.WriteLine("stuff");
+	}
+	catch(Exception ex)
+	{
+		Console.WriteLine("Things");
+	}
+}
+
+public static void MyNewMethod(string arg1, string arg2 Stuff stuff)
+{
+	try
+	{
+		Console.WriteLine("stuff");
+	}
+	catch(Exception ex)
+	{
+		Console.WriteLine("Things");
+	}
+}
+
+public class Stuff()
+{
+	public string Things;
+}

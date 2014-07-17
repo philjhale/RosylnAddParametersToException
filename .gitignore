@@ -1,0 +1,8 @@
+AddParametersToException.sln.ide/
+AddParametersToException/obj/
+Tests/bin/
+Tests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Tests/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+Tests/obj/
+AddParametersToException/bin/
+*.ide
